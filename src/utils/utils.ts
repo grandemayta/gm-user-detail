@@ -1,8 +1,5 @@
-
-export function format(first: string, middle: string, last: string): string {
-  return (
-    (first || '') +
-    (middle ? ` ${middle}` : '') +
-    (last ? ` ${last}` : '')
-  );
+export function getGraphQLRequest(nickname: string) {
+  return JSON.stringify({ 
+    query: `{ user(login: "${nickname}") { login name company bio } }`
+  });
 }

@@ -3,7 +3,7 @@ import { httpWrapper } from '../../utils/httpWrapper';
 
 @Component({
   tag: 'gm-user-detail',
-  styleUrl: 'my-component.css',
+  styleUrl: 'my-component.scss',
   shadow: true
 })
 export class MyComponent {
@@ -20,9 +20,9 @@ export class MyComponent {
   render() {
     return (
       <Host>
+        <img src={this.data.avatar_url} />
         <h1>{this.data.name}</h1>
         <h2>{this.data.bio}</h2>
-        <p>{this.data.company}</p>
       </Host>
     );
   }

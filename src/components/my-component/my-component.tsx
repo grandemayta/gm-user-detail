@@ -23,6 +23,7 @@ export class MyComponent {
         <img src={this.data.avatar_url} />
         <h1>{this.data.name}</h1>
         <h2>{this.data.bio} at {this.data.company}</h2>
+        <h3>{this.data.location}</h3>
       </Host>
     );
   }

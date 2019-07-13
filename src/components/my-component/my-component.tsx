@@ -6,7 +6,7 @@ import { httpWrapper } from '../../utils/httpWrapper';
   styleUrl: 'my-component.scss',
   shadow: true
 })
-export class MyComponent {
+export class UserDetail {
   /**
    * The nickname
    */
